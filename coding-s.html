@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UFT -8">
+        <meta name="viewport" content="width=device-width,initail-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=egde">
+        <title>website design</title>
+        <link rel="stylesheet" href="coding.css">
+        <script>
+                function openSlideMenu(){
+                   document.getElementById("inside-menu").style.width='250px';
+                   document.getElementById("content").style.marginLeft='250px';
+                }
+                function closeSlideMenu(){
+                   document.getElementById("inside-menu").style.width='0';
+                   document.getElementById("content").style.marginLeft='0';
+                }
+        </script>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div class="content">
+                <h1><span class="highlight">Acme</span> web design</h1>
+                </div>
+                <div class="content" id="content">
+                   <span id="side-menu">
+                       <a href="#" onclick="openSlideMenu()">
+                       <svg width="30" height="30">
+                           <path d="M0,5 30,5" stroke="black" stroke-width="5"></path>
+                           <path d="M0,15 30,15" stroke="black" stroke-width="5"></path>
+                           <path d="M0,25 30,25" stroke="black" stroke-width="5"></path>
+                        </svg>
+                        </a>
+                   </span>
+                    <div id="inside-menu" class="inside-menu">
+                        <a href="#" class="close-btn"onclick="closeSlideMenu()">&times;</a>
+                        <a class="current" href="coding.html">Home</a>
+                        <a href="coding-a.html">About</a>
+                        <a href="coding-s.html">Services</a>
+                    </div>  
+
+            </div>
+        </header>
+         <!--newsletter-->
+        <div id="newsletter">
+            <div class="content">
+                 <h2>subscribe o our website</h2>
+                 <form>
+                     <input type="text" name="enter your mail" placeholder="enter your mail">
+                     <input class="btn" type="submit" value="subscribe">
+                </form>
+            </div>
+        </div>
+        <!--section-C-->
+        <div id="section-C">
+            <div class="content">
+
+                    <aside class="side">
+                            <h3 >Get A Quote</h3>
+                            <form>
+                                <div>
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="enter name">
+                                </div>
+                                <div>
+                                    <label>Email</label>
+                                    <input type="email" placeholder="enter email">
+                                </div>
+                                <div>
+                                    <label>Massage</label>
+                                    <textarea placeholder="massage"></textarea>
+                                </div>
+                                <div>
+                                <button  class="btn"type="submit" value="send" >Send</button>
+                                </div>
+                            </form>
+                        </aside>
+                <div id="side">
+                <h2>Services</h2>
+                <div class="box">
+                    <h2>website designs</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos illum ex asperiores rem error necessitatibus nesciunt, voluptatem rerum magnam nisi dicta, provident laudantium nulla. Consectetur voluptatum rem nam eum magnam.</p>
+                    <p>prize $500 per month</p>
+                </div>
+                <div class="box">
+                    <h2>website hosting</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus iure aspernatur velit optio veritatis animi odio. Facere et veritatis dignissimos, eos voluptatem dolore nulla eius labore maxime dolores eum magnam!</p>
+                    <p>prize $500 per month</p>
+                </div>
+                <div class="box">
+                    <h2>website maintanace</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quaerat adipisci dolores veritatis quis enim, odit harum earum facilis, reiciendis, repellat dicta sit obcaecati similique cum consectetur corporis ea. Ipsam?</p>
+                    <p>prize $500 per month</p>
+                </div>
+                </div>
+
+            </div>
+           
+        </div>
+        
+         <footer>
+            <p>Acme web design copy &copy 2020</p>
+        </footer>
+    
+
+
+    </body>
+</html>
