@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UFT -8">
+  <meta name="viewport" content="width=device-width,initail-scale=1.0">
+  <meta http-equiv="X-UA-compatible" content="ie=egde">
+  <title>website design</title>
+  <link rel="stylesheet" href="coding.css">
+  <script>
+    function openSlideMenu() {
+      document.getElementById("inside-menu").style.width = '250px';
+      document.getElementById("content").style.marginLeft = '250px';
+    }
+    function closeSlideMenu() {
+      document.getElementById("inside-menu").style.width = '0';
+      document.getElementById("content").style.marginLeft = '0';
+    }
+  </script>
+</head>
+
+<body>
+  <!--header-->
+  <header>
+    <div class="content">
+      <h1>
+        <span class="highlight">Acme</span> web design</h1>
+    </div>
+    <div class="content" id="content">
+      <span id="side-menu">
+        <a href="#" onclick="openSlideMenu()">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="black" stroke-width="5"></path>
+            <path d="M0,15 30,15" stroke="black" stroke-width="5"></path>
+            <path d="M0,25 30,25" stroke="black" stroke-width="5"></path>
+          </svg>
+        </a>
+      </span>
+      <div id="inside-menu" class="inside-menu">
+        <a href="#" class="close-btn" onclick="closeSlideMenu()">&times;</a>
+        <a class="current" href="coding.html">Home</a>
+        <a href="coding-a.html">About</a>
+        <a href="coding-s.html">Services</a>
+      </div>
+    </div>
+  </header>
+  <!--newsletter-->
+  <div id="newsletter">
+    <div class="content">
+      <h2>subscribe o our website</h2>
+      <form>
+        <input class="btn-input" type="text" name="enter your mail" placeholder="enter your mail">
+        <input class="btn" type="submit" value="subscribe">
+      </form>
+    </div>
+  </div>
+  <div class="section-B">
+    <div class="content">
+      <aside>
+        <h2>what we do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veniam similique hic? Voluptate id doloribus
+          ipsam pariatur dolorum et cumque eos adipisci tempore esse! Obcaecati architecto consequatur vitae non recusandae.
+        </p>
+      </aside>
+      <article>
+        <h2>About us</h2>
+        <p class="black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tenetur nobis porro saepe magnam corporis, dolor
+          in impedit voluptatibus labore quidem pariatur similique doloribus illo odit aspernatur ipsam, est beatae atque!
+          Unde, magnam totam, non fuga earum dolores necessitatibus eaque ipsum id quisquam, saepe pariatur. Ipsum iure saepe
+          tempore, nisi praesentium quia mollitia aliquid sunt eligendi ullam autem nemo, consectetur molestias labore laudantium
+          perferendis. Quisquam hic quas unde, suscipit veritatis sunt dolorum, in maiores nam voluptas laudantium quod,
+          blanditiis voluptate minima fugiat magni facilis reiciendis? Amet delectus repudiandae nesciunt non corporis neque
+          odit minus, nam enim ullam error accusantium architecto?
+        </p>
+        <p class="dim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, ea inventore maxime tempore nihil perspiciatis
+          distinctio ut, velit illum non accusantium quaerat rerum consequuntur porro vel doloremque error consequatur? Non,
+          provident repellat nemo obcaecati in odio, ut dicta, voluptas minima laudantium nesciunt iste quos quas animi.
+          Eligendi velit deserunt alias. Eius nulla blanditiis itaque? Quis quaerat, iure maxime aspernatur molestiae laboriosam
+          inventore distinctio eligendi quod modi autem. Qui similique quibusdam aut deserunt, eius maiores tempora minima,
+          dicta animi mollitia dignissimos placeat esse veniam amet perspiciatis. Accusantium, impedit harum, ea sed debitis
+          dolore exercitationem veniam adipisci ab qui, rem doloremque iste! </p>
+      </article>
+    </div>
+
+  </div>
+  <footer>
+    <p>Acme web design copy &copy 2020</p>
+  </footer>
+</body>
+</html>
